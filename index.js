@@ -9,16 +9,6 @@ const buttonContainer = document.querySelector(".buttonContainer");
 const scientificHidden = document.querySelectorAll(".scientificHidden");
 const grid = document.querySelectorAll(".grid");
 
-// standard.addEventListener("click", () => {
-//   calculatorContainer.classList.remove("scientificCalculatorContainer");
-//   buttonContainer.innerHTML = standardModeButtons;
-// });
-
-// scientific.addEventListener("click", () => {
-//   calculatorContainer.classList.add("scientificCalculatorContainer");
-//   buttonContainer.innerHTML = scientificModeButtons;
-// });
-
 function appendToDisplay(char) {
   operation.textContent += char;
 }
