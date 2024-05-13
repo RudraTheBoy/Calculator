@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculatorContainer">
+      <div class="screen">
+        <div class="screenPrev" id="operation"></div>
+        <div class="screenCurrent" id="operationAnswer"></div>
+      </div>
+      <div class="buttonContainer">
+     <div class="grid">
+         <button class="input operator" id="deletePrev" onclick="deleteLast()">
+           <i class="fa-solid fa-delete-left"> </i>
+         </button>
+         <button class="input operator" id="plusMinus">
+           <i class="fa-solid fa-plus-minus"> </i>
+         </button>
+         <button class="input operator" onclick="appendToDisplay('/')">
+           <i class="fa-solid fa-divide"> </i>
+         </button>
+         <button class="input operator" onclick="clearDisplay()">
+           <i class="fa-solid fa-trash-can"> </i>
+         </button>
+       </div>
+       <div class="grid">
+         <button class="input" onclick="appendToDisplay('7')">7</button>
+         <button class="input" onclick="appendToDisplay('8')">8</button>
+         <button class="input" onclick="appendToDisplay('9')">9</button>
+         <button class="input operator" onclick="appendToDisplay('*')">
+           <i class="fa-solid fa-x"> </i>
+         </button>
+       </div>
+       <div class="grid">
+         <button class="input" onclick="appendToDisplay('4')">4</button>
+         <button class="input" onclick="appendToDisplay('5')">5</button>
+         <button class="input" onclick="appendToDisplay('6')">6</button>
+         <button class="input operator" onclick="appendToDisplay('-')">
+           <i class="fa-solid fa-minus"> </i>
+         </button>
+       </div>
+       <div class="grid">
+         <button class="input" onclick="appendToDisplay('1')">1</button>
+         <button class="input" onclick="appendToDisplay('2')">2</button>
+         <button class="input" onclick="appendToDisplay('3')">3</button>
+         <button class="input operator" onclick="appendToDisplay('+')">
+           <i class="fa-solid fa-plus"> </i>
+         </button>
+       </div>
+       <div class="grid lastGrid">
+         <button class="input" onclick="appendToDisplay('.')">.</button>
+         <button class="input" onclick="appendToDisplay('0')">0</button>
+         <button class="input operator" onclick="calculate()">
+           <i class="fa-solid fa-equals"> </i>
+         </button>
+       </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script
+    src="https://kit.fontawesome.com/4f8fc51de1.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
